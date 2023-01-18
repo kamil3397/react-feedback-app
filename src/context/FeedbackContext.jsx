@@ -25,7 +25,7 @@ export const FeedbackProvider = ({ children }) => {
 
   // Add feedback
   const addFeedback = async (newFeedback) => {
-    const response = await fetch('/feedback', {
+    const response = await fetch('http://localhost:5000/feedback', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ export const FeedbackProvider = ({ children }) => {
 
   // Update feedback item
   const updateFeedback = async (id, updItem) => {
-    const response = await fetch(`/feedback/${id}`, {
+    const response = await fetch(`http://localhost:5000/feedback/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
