@@ -2,7 +2,7 @@
 
 I created an app that will give you the ability to comment and rate. In short - Feedback App
 
-#Usage
+# Usage
 ## Install dependencies
 ### npm install
 
