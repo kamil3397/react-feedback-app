@@ -4,7 +4,7 @@ import FeedbackItem from './FeedbackItem'
 import Spinner from './shared/Spinner'
 import FeedbackContext from '../context/FeedbackContext'
 
-function FeedbackList({}) {
+function FeedbackList() {
   const { feedback, isLoading } = useContext(FeedbackContext)
 
   if (!isLoading && (!feedback || feedback.length === 0)) {
